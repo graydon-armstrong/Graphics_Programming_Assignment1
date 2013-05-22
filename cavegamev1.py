@@ -1,4 +1,8 @@
-import time
+#Name: Graydon Armstrong
+#Date: May 22nd, 2013
+#Source File: cavegamev1.py
+
+#import time
 
 def main():
     displayIntro()
