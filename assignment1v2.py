@@ -24,27 +24,34 @@ def displayIntro():
     print("You look around and see that the rest of your crew have not survived the impact.")
     print("The ships computer announces that the boarding party from the unknown vessel is now onboard")
     print("You will need to escape the ship the get to safety.")
-    print("It is time to leave the bridge.")
+    print("It is time to leave the bridge. The Medbay is to the left and Engineering is to the right.")
     
 # The chooseDirection method lets you choose if you are going left or right
 # from your current location
 def chooseDirection():
     direction = ''
     while direction != '1' and direction != '2':
-        print("Will you go left(1) or right(2)?")
+        print("Will you go left or right? (1 or 2)")
         direction = raw_input()
     return direction
 
 # the changeLocation method changes your location on the decision tree
 def changeLocation(chosenDirection,location):
     location = int(location) * 2 + int(chosenDirection)
-    print(location)
     return location
 
 # the checkLocation method displays the story for your new location
 def checkLocation(location):
     if location == 1:
         print("A")
+        print("You leave the bridge and head left down the hallway to the Medbay.")
+        print("You hear scurrying in the distance and quickly duck inside the Medbay.")
+        print("The room is dark, the syringes and surgical tools look manacing.")
+        print("You sneak into the room and out of the corner of your eye see an alien with its back to you.")
+        print("The alien is feasting on one of the comotose patients, and you slowly back away distgusted.")
+        print("You try to escape without making a sound but knock a bedpan with your foot because of the darkness.")
+        print("You decide to run as you hear the alien turn from its meal.")
+        print("The closest compartments to hide are the barracks on the left and the gym on the right.")
     elif location == 2:
         print("B")
     elif location == 3:
@@ -72,6 +79,7 @@ def checkLocation(location):
     elif location == 14:
         print("Lose BBB")
     
+    # if the location is 7 or greater the player has reached one of the 8 outcomes
     if location >= 7:
         return -1
     else:
