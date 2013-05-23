@@ -75,6 +75,12 @@ def checkLocation(location):
         print("You look around and see a pistol strewn on the floor to the left and swords for training on a rack to the right.")
     elif location == 5:
         print("BA")
+        print("You head towards the cargo bay from engineering.")
+        print("You hear aliens coming from the hallway behind you.")
+        print("You enter the cargo bay and try to hide yourself among the containers.")
+        print("You hear the aliens enter the cargo bay and start searching for you.")
+        print("You decide you need to run or they are going to find you eventually.")
+        print("To the left you see some aliens conregating and to the right you see the exit to the kitchen.")
     elif location == 6:
         print("BB")
         print("You head towards the escape pods from engineering.")
@@ -111,11 +117,15 @@ def checkLocation(location):
         print("You lunge at the alien prepared to land a killing blow.")
         print("As you are about to kill the tripped alien you feel a huge pain in your chest.")
         print("You look down and see a sword coming out of your chest, and realise that the aliens travel in pairs.")
-        print("You fall to the floor and died quickly from your fatal wound.")
+        print("You fall to the floor and die quickly from your fatal wound.")
     elif location == 11:
         print("Win BAA")
+        
     elif location == 12:
         print("Lose BAB")
+        print("You decide to make a run for the kitchen.")
+        print("On the way there you trip over your own feet and hit your head on the floor.")
+        print("Your bleed out from slipping on the floor and think how ironic it is that you died from your own stupidity.")
     elif location == 13:
         print("Lose BBA")
         print("You head for the escape pod on the far left of the bay.")
