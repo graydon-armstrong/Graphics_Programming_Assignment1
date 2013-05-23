@@ -82,6 +82,10 @@ def checkLocation(location):
         print("You are quickly overwhelmed by the number of aliens and are massacred in minutes.")
     elif location == 8:
         print("Lose AAB")
+        print("You convince the marines and yourself to go hide in the storage closet on the right.")
+        print("You open the door and in horror see that their is a hole in the hull of the ship.")
+        print("You and the marines are sucked out of the ship as the oxygen from the barracks")
+        print("violently explodes as it decompresses into the vacuum of space.")
     elif location == 9:
         print("Lose ABA")
     elif location == 10:
