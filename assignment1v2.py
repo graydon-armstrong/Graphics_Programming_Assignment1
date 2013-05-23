@@ -94,8 +94,21 @@ def checkLocation(location):
         print("violently explodes as it decompresses into the vacuum of space.")
     elif location == 9:
         print("Lose ABA")
+        print("You dive for the pistol on the left and wrap your hand around the grip.")
+        print("You turn and aim towards the alien and pull the trigger.")
+        print("*click*")
+        print("The gun is out of ammo and your fate is sealed.")
+        print("You scream in horror as the alien launches itself upon you and rips you to shreds.")
     elif location == 10:
         print("Lose ABB")
+        print("You run for the swords on the right and get your hands on one just in time to defend yourself.")
+        print("You deflect the aliens first blow and grunt in pain as you realise how strong it is.")
+        print("You tire quickly as you block every overpowering blow the alien swings at you.")
+        print("As you are backing towards the wall the alien loses its footing and you see your chance.")
+        print("You lunge at the alien prepared to land a killing blow.")
+        print("As you are about to kill the tripped alien you feel a huge pain in your chest.")
+        print("You look down and see a sword coming out of your chest, and realise that the aliens travel in pairs.")
+        print("You fall to the floor and died quickly from your fatal wound.")
     elif location == 11:
         print("Win BAA")
     elif location == 12:
