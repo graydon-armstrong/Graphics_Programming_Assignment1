@@ -1,6 +1,6 @@
 # Name: Graydon Armstrong
-# Date: May 22nd, 2013
-# Source File: cavegamev1.py
+# Date: May 23nd, 2013
+# Source File: assignment1v2.py
 
 # import time
 
