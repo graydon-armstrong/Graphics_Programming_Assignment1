@@ -73,7 +73,13 @@ def checkLocation(location):
         print("BB")
     elif location == 7:
         print("Lose AAA")
-        print("")
+        print("You choose to rally the marines on their bunks to grab weapons from the locker on the left.")
+        print("You and the marines setup with your weapons aimed at the door.")
+        print("You hear more aliens arrive outside the door and start trying to break in.")
+        print("The door crashes open and a mass of aliens rush through the opening.")
+        print("You and the marines start to open fire on the aliens.")
+        print("A few aliens drop from your fire but they have weaposn themselves and start to return fire.")
+        print("You are quickly overwhelmed by the number of aliens and are massacred in minutes.")
     elif location == 8:
         print("Lose AAB")
     elif location == 9:
