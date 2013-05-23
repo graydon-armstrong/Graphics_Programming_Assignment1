@@ -43,15 +43,44 @@ def chooseDirection():
 def changeLocation(chosenDirection):
     global location
     if location == -1:
-        location = chosenDirection
+        location = int(chosenDirection)
     else:
-        location = location*2 + chosenDirection
+        location = int(location)*2 + int(chosenDirection)
+        print(location)
 
 #the checkLocation method displays the story for your new location
 def checkLocation():
-    if location == '1':
+    if location == 1:
         print("Test 1")
-    elif location == '2':
+    elif location == 2:
         print("Test 2")
+    elif location == 3:
+        print("Test 3")
+    elif location == 4:
+        print("Test 4")
+    elif location == 5:
+        print("Test 5")
+    elif location == 6:
+        print("Test 6")
+    elif location == 7:
+        print("Test 7")
+    elif location == 8:
+        print("Test 8")
+    elif location == 9:
+        print("Test 9")
+    elif location == 10:
+        print("Test 10")
+    elif location == 11:
+        print("Test 11")
+    elif location == 12:
+        print("Test 12")
+    elif location == 13:
+        print("Test 13")
+    elif location == 14:
+        print("Test 14")
+    elif location == 15:
+        print("Test 15")
+    elif location == 16:
+        print("Test 16")
         
 if __name__ == "__main__": main()
