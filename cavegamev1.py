@@ -4,8 +4,10 @@
 
 #import time
 
+#location on the decision tree
 location = -1
 
+#The main method controls the game loop
 def main():
     playAgain = 'y'
     while playAgain == 'y':
@@ -16,6 +18,7 @@ def main():
         print("Do you want to play again? (y or n)")
         playAgain = raw_input()
     
+#The intro method displays intro story messages
 def displayIntro():
     print("You wake up to klaxons wailing on the bridge of your starship.")
     print("You look around and see that the rest of your crew have not survived the impact.")
@@ -23,6 +26,8 @@ def displayIntro():
     print("You will need to escape the ship the get to safety.")
     print("It is time to leave the bridge.")
     
+#The chooseDirection method lets you choose if you are going left or right
+#from your current location
 def chooseDirection():
     direction = ''
     while direction != '1' and direction != '2':
@@ -30,10 +35,11 @@ def chooseDirection():
         direction = raw_input()
     return direction
 
+#the checkLocation method changes your location on the decision tree
 def checkLocation(chosenDirection):
     if location == -1:
         location = chosenDirection
-    else
+    else:
         location = location*2 + chosenDirection
         
     
