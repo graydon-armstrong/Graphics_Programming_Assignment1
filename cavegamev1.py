@@ -5,14 +5,20 @@
 #import time
 
 def main():
-    displayIntro()
+    playAgain = 'y'
+    while playAgain == 'y':
+        displayIntro()
+        chooseDirection
+        
+        print("Do you want to play again? (y or n)")
+        playAgain = raw_input()
     
 def displayIntro():
     print("You wake up to klaxons wailing on the bridge of your starship.")
     print("You look around and see that the rest of your crew have not survived the impact.")
     print("The ships computer announces that the boarding party from the unknown vessel is now onboard")
     print("You will need to escape the ship the get to safety.")
-    print("Will you go left or right from the bridge? ")
+    print("It is time to leave the bridge.")
     
 def chooseDirection():
     direction = ''
