@@ -67,6 +67,12 @@ def checkLocation(location):
         print("You see weapons to the left side of the room and a large closet to hide in on the right.")
     elif location == 4:
         print("AB")
+        print("You reach the gym and close the door behind you.")
+        print("The door has a reinforced door which you lock securely behind you.")
+        print("The alien that was chasing you smashes into the reinforced door and wails in pain.")
+        print("You feel safe for a second until the lights flicker on and you see an alein standing in the center of the room.")
+        print("The alein snarls at you and charges at you with some kind of jagged sword.")
+        print("You look around and see a pistol strewn on the floor to the left and swords for training on a rack to the right.")
     elif location == 5:
         print("BA")
     elif location == 6:
