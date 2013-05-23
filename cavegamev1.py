@@ -13,7 +13,10 @@ def main():
     while playAgain == 'y':
         displayIntro()
         location = -1;
-        direction = chooseDirection()
+        while location != -2:
+            direction = chooseDirection()
+            changeLocation(direction)
+            checkLocation();
         
         print("Do you want to play again? (y or n)")
         playAgain = raw_input()
@@ -35,14 +38,18 @@ def chooseDirection():
         direction = raw_input()
     return direction
 
-#the checkLocation method changes your location on the decision tree
-def checkLocation(chosenDirection):
+#the changeLocation method changes your location on the decision tree
+def changeLocation(chosenDirection):
     if location == -1:
         location = chosenDirection
     else:
         location = location*2 + chosenDirection
+
+#the checkLocation method displays the story for your new location
+def checkLocation():
+    if location == 1:
+        print("Test 1")
+    elif location == 2:
+        print("Test 2")
         
-    
-    
-    
 if __name__ == "__main__": main()
