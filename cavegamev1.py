@@ -66,27 +66,22 @@ def checkLocation():
         print("BB")
     elif location == 7:
         print("Lose AAA")
-        location = -2
     elif location == 8:
         print("Lose AAB")
-        location = -2
     elif location == 9:
         print("Lose ABA")
-        location = -2
     elif location == 10:
         print("Lose ABB")
-        location = -2
     elif location == 11:
         print("Win BAA")
-        location = -2
     elif location == 12:
         print("Lose BAB")
-        location = -2
     elif location == 13:
         print("Lose BBA")
-        location = -2
     elif location == 14:
         print("Lose BBB")
+    
+    if location >= 7:
         location = -2
         
 if __name__ == "__main__": main()
