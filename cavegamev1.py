@@ -50,37 +50,43 @@ def changeLocation(chosenDirection):
 
 #the checkLocation method displays the story for your new location
 def checkLocation():
+    global location
+    
     if location == 1:
-        print("Test 1")
+        print("A")
     elif location == 2:
-        print("Test 2")
+        print("B")
     elif location == 3:
-        print("Test 3")
+        print("AA")
     elif location == 4:
-        print("Test 4")
+        print("AB")
     elif location == 5:
-        print("Test 5")
+        print("BA")
     elif location == 6:
-        print("Test 6")
+        print("BB")
     elif location == 7:
-        print("Test 7")
+        print("Lose AAA")
+        location = -2
     elif location == 8:
-        print("Test 8")
+        print("Lose AAB")
+        location = -2
     elif location == 9:
-        print("Test 9")
+        print("Lose ABA")
+        location = -2
     elif location == 10:
-        print("Test 10")
+        print("Lose ABB")
+        location = -2
     elif location == 11:
-        print("Test 11")
+        print("Win BAA")
+        location = -2
     elif location == 12:
-        print("Test 12")
+        print("Lose BAB")
+        location = -2
     elif location == 13:
-        print("Test 13")
+        print("Lose BBA")
+        location = -2
     elif location == 14:
-        print("Test 14")
-    elif location == 15:
-        print("Test 15")
-    elif location == 16:
-        print("Test 16")
+        print("Lose BBB")
+        location = -2
         
 if __name__ == "__main__": main()
