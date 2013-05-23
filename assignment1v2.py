@@ -54,8 +54,17 @@ def checkLocation(location):
         print("The closest compartments to hide are the barracks on the left and the gym on the right.")
     elif location == 2:
         print("B")
+        print("You leave the bridge and head right down the hallway to engineering.")
+        print("As you walk into engineering the lights flicker and you can hear the engine whining.")
+        print("The ship has taken alot of damage from the alien boarding party.")
+        print("You hear feral screams of the alien language come from the hallway behind you and hurry your pace.")
+        print("You reach a juncture where you can head towards the Cargo Bay on the left or towards the Escape Pods on your right.")
     elif location == 3:
         print("AA")
+        print("You reach the barracks and close the door behind you.")
+        print("Just as you lock the door the alien that was chasing you slams into and dents the door.")
+        print("With fear on your face you turn to view the barracks and are releived to see 10 marines sitting on their bunks.")
+        print("You see weapons to the left side of the room and a large closet to hide in on the right.")
     elif location == 4:
         print("AB")
     elif location == 5:
@@ -64,6 +73,7 @@ def checkLocation(location):
         print("BB")
     elif location == 7:
         print("Lose AAA")
+        print("")
     elif location == 8:
         print("Lose AAB")
     elif location == 9:
