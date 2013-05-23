@@ -1,28 +1,24 @@
-#Name: Graydon Armstrong
-#Date: May 22nd, 2013
-#Source File: cavegamev1.py
+# Name: Graydon Armstrong
+# Date: May 22nd, 2013
+# Source File: cavegamev1.py
 
-#import time
+# import time
 
-#location on the decision tree
-location = 0
-
-#The main method controls the game loop
+# The main method controls the game loop
 def main():
     playAgain = 'y'
-    global location
     while playAgain == 'y':
         displayIntro()
         location = 0;
         while location != -1:
             direction = chooseDirection()
-            changeLocation(direction)
-            checkLocation();
+            location = changeLocation(direction,location)
+            location = checkLocation(location);
         
         print("Do you want to play again? (y or n)")
         playAgain = raw_input()
     
-#The intro method displays intro story messages
+# The intro method displays intro story messages
 def displayIntro():
     print("You wake up to klaxons wailing on the bridge of your starship.")
     print("You look around and see that the rest of your crew have not survived the impact.")
@@ -30,8 +26,8 @@ def displayIntro():
     print("You will need to escape the ship the get to safety.")
     print("It is time to leave the bridge.")
     
-#The chooseDirection method lets you choose if you are going left or right
-#from your current location
+# The chooseDirection method lets you choose if you are going left or right
+# from your current location
 def chooseDirection():
     direction = ''
     while direction != '1' and direction != '2':
@@ -39,16 +35,14 @@ def chooseDirection():
         direction = raw_input()
     return direction
 
-#the changeLocation method changes your location on the decision tree
-def changeLocation(chosenDirection):
-    global location
-    location = int(location)*2 + int(chosenDirection)
+# the changeLocation method changes your location on the decision tree
+def changeLocation(chosenDirection,location):
+    location = int(location) * 2 + int(chosenDirection)
     print(location)
+    return location
 
-#the checkLocation method displays the story for your new location
-def checkLocation():
-    global location
-    
+# the checkLocation method displays the story for your new location
+def checkLocation(location):
     if location == 1:
         print("A")
     elif location == 2:
@@ -79,6 +73,8 @@ def checkLocation():
         print("Lose BBB")
     
     if location >= 7:
-        location = -1
+        return -1
+    else:
+        return location
         
 if __name__ == "__main__": main()
