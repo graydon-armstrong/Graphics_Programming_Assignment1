@@ -5,7 +5,7 @@
 #import time
 
 #location on the decision tree
-location = -1
+location = 0
 
 #The main method controls the game loop
 def main():
@@ -13,8 +13,8 @@ def main():
     global location
     while playAgain == 'y':
         displayIntro()
-        location = -1;
-        while location != -2:
+        location = 0;
+        while location != -1:
             direction = chooseDirection()
             changeLocation(direction)
             checkLocation();
@@ -42,11 +42,8 @@ def chooseDirection():
 #the changeLocation method changes your location on the decision tree
 def changeLocation(chosenDirection):
     global location
-    if location == -1:
-        location = int(chosenDirection)
-    else:
-        location = int(location)*2 + int(chosenDirection)
-        print(location)
+    location = int(location)*2 + int(chosenDirection)
+    print(location)
 
 #the checkLocation method displays the story for your new location
 def checkLocation():
@@ -82,6 +79,6 @@ def checkLocation():
         print("Lose BBB")
     
     if location >= 7:
-        location = -2
+        location = -1
         
 if __name__ == "__main__": main()
