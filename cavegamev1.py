@@ -49,9 +49,9 @@ def changeLocation(chosenDirection):
 
 #the checkLocation method displays the story for your new location
 def checkLocation():
-    if location == 1:
+    if location == '1':
         print("Test 1")
-    elif location == 2:
+    elif location == '2':
         print("Test 2")
         
 if __name__ == "__main__": main()
