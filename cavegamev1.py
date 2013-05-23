@@ -4,11 +4,14 @@
 
 #import time
 
+location = -1
+
 def main():
     playAgain = 'y'
     while playAgain == 'y':
         displayIntro()
-        chooseDirection
+        location = -1;
+        direction = chooseDirection()
         
         print("Do you want to play again? (y or n)")
         playAgain = raw_input()
@@ -26,6 +29,14 @@ def chooseDirection():
         print("Will you go left(1) or right(2)?")
         direction = raw_input()
     return direction
+
+def checkLocation(chosenDirection):
+    if location == -1:
+        location = chosenDirection
+    else
+        location = location*2 + chosenDirection
+        
+    
     
     
 if __name__ == "__main__": main()
