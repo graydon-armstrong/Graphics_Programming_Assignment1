@@ -10,6 +10,7 @@ location = -1
 #The main method controls the game loop
 def main():
     playAgain = 'y'
+    global location
     while playAgain == 'y':
         displayIntro()
         location = -1;
@@ -40,6 +41,7 @@ def chooseDirection():
 
 #the changeLocation method changes your location on the decision tree
 def changeLocation(chosenDirection):
+    global location
     if location == -1:
         location = chosenDirection
     else:
