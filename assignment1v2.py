@@ -77,6 +77,9 @@ def checkLocation(location):
         print("BA")
     elif location == 6:
         print("BB")
+        print("You head towards the escape pods from engineering.")
+        print("You enter the bay and see that all but two of the escape pods have been used.")
+        print("There is one of the far left end of the bay and one on the far right of the bay.")
     elif location == 7:
         print("Lose AAA")
         print("You choose to rally the marines on their bunks to grab weapons from the locker on the left.")
@@ -115,8 +118,16 @@ def checkLocation(location):
         print("Lose BAB")
     elif location == 13:
         print("Lose BBA")
+        print("You head for the escape pod on the far left of the bay.")
+        print("You enter the escape pod, strap in, and start the launch.")
+        print("The escape pod launches and the alien ships target it as it is leaving.")
+        print("The escape pods explodes as it is fired upon by the aliens.")
     elif location == 14:
         print("Lose BBB")
+        print("You head for the escape pod on the far right of the bay.")
+        print("As the hatch for the escape pod closes you notice the putrid smell of death.")
+        print("An alien comes around from behind the pilots chair and attacks you.")
+        print("You are squished against the hatch as the alien crushes you in its charge.")
     
     # if the location is 7 or greater the player has reached one of the 8 outcomes
     if location >= 7:
