@@ -2,14 +2,18 @@
 # Date: May 23nd, 2013
 # Source File: assignment1v3.py
 
+# import time to sleep between messages
 import time
 
 # The main method controls the game loop
 def main():
     playAgain = 'y'
+    #repeat playing the game if the player says y
     while playAgain == 'y':
         displayIntro()
+        # start the game at the bridge location
         location = 0;
+        # while location is not = to -1, keep checking for decisions
         while location != -1:
             direction = chooseDirection()
             location = changeLocation(direction,location)
@@ -35,6 +39,7 @@ def displayIntro():
 # from your current location
 def chooseDirection():
     direction = ''
+    # keep asking the player for a direction until they choose 1 or 2
     while direction != '1' and direction != '2':
         print("Will you go left or right? (1 or 2)")
         direction = raw_input()
@@ -42,6 +47,7 @@ def chooseDirection():
 
 # the changeLocation method changes your location on the decision tree
 def changeLocation(chosenDirection,location):
+    # go to the next location on the tree
     location = int(location) * 2 + int(chosenDirection)
     return location
 
@@ -227,5 +233,6 @@ def checkLocation(location):
         return -1
     else:
         return location
-        
+
+# run the main class        
 if __name__ == "__main__": main()
