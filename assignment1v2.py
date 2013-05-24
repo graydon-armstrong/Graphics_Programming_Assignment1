@@ -1,6 +1,10 @@
 # Name: Graydon Armstrong
 # Date: May 23nd, 2013
 # Source File: assignment1v2.py
+# Last Modified By: Graydon Armstrong
+# Date Last Modified: May 23nd, 2013
+# Program description: A game where you try to escape a boarded spaceship. There are 3 junctures the player will reach.
+#                      In total there are 6 Total Nodes and 8 different outcomes, but only 1 positive outcome.
 
 # import time
 
