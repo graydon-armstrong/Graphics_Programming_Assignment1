@@ -120,7 +120,12 @@ def checkLocation(location):
         print("You fall to the floor and die quickly from your fatal wound.")
     elif location == 11:
         print("Win BAA")
-        
+        print("You slowly walk towards the aleins talking to each other in grunts.")
+        print("Behind them you see the opening to an alien boarding ship.")
+        print("They walk off in the other direction, and you sneak towards the door to their ship.")
+        print("You get in the ship without any of the aliens noticing and lock the hatch.")
+        print("You get into the captains chair and fly away from your ship in the alien vessel.")
+        print("You have survived! :D")
     elif location == 12:
         print("Lose BAB")
         print("You decide to make a run for the kitchen.")
