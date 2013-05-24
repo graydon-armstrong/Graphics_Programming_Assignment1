@@ -1,0 +1,16 @@
+-1 Bridge
+	1 - Medbay
+		3 - Barracks
+			Outcome 1(7) - Lose
+			Outcome 2(8) - Lose
+		4 - Gym
+			Outcome 3(9) - Lose
+			Outcome 4(10) - Lose
+
+	2 - Engineering
+		5 - Cargo Bay
+			Outcome 5(11) - Win
+			Outcome 6(12) - Lose
+		6 - Escape Pod
+			Outcome 7(13) - Lose
+			Outcome 8(14) - Lose
