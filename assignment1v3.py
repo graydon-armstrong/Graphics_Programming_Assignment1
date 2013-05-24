@@ -58,7 +58,6 @@ def changeLocation(chosenDirection,location):
 # the checkLocation method displays the story for your new location
 def checkLocation(location):
     if location == 1:
-        print("A")
         print("You leave the bridge and head left down the hallway to the Medbay.")
         time.sleep(2)
         print("You hear scurrying in the distance and quickly duck inside the Medbay.")
@@ -76,7 +75,6 @@ def checkLocation(location):
         print("The closest compartments to hide are the barracks on the left and the gym on the right.")
         time.sleep(3)
     elif location == 2:
-        print("B")
         print("You leave the bridge and head right down the hallway to engineering.")
         time.sleep(2)
         print("As you walk into engineering the lights flicker and you can hear the engine whining.")
@@ -88,7 +86,6 @@ def checkLocation(location):
         print("You reach a juncture where you can head towards the Cargo Bay on the left or towards the Escape Pods on your right.")
         time.sleep(4)
     elif location == 3:
-        print("AA")
         print("You reach the barracks and close the door behind you.")
         time.sleep(2)
         print("Just as you lock the door the alien that was chasing you slams into and dents the door.")
@@ -98,7 +95,6 @@ def checkLocation(location):
         print("You see weapons to the left side of the room and a large closet to hide in on the right.")
         time.sleep(3)
     elif location == 4:
-        print("AB")
         print("You reach the gym and close the door behind you.")
         time.sleep(2)
         print("The door has a reinforced door which you lock securely behind you.")
@@ -112,7 +108,6 @@ def checkLocation(location):
         print("You look around and see a pistol strewn on the floor to the left and swords for training on a rack to the right.")
         time.sleep(4)
     elif location == 5:
-        print("BA")
         print("You head towards the cargo bay from engineering.")
         time.sleep(2)
         print("You hear aliens coming from the hallway behind you.")
@@ -126,7 +121,6 @@ def checkLocation(location):
         print("To the left you see some aliens conregating and to the right you see the exit to the kitchen.")
         time.sleep(4)
     elif location == 6:
-        print("BB")
         print("You head towards the escape pods from engineering.")
         time.sleep(2)
         print("You enter the bay and see that all but two of the escape pods have been used.")
@@ -134,7 +128,6 @@ def checkLocation(location):
         print("There is one of the far left end of the bay and one on the far right of the bay.")
         time.sleep(3)
     elif location == 7:
-        print("Lose AAA")
         print("You choose to rally the marines on their bunks to grab weapons from the locker on the left.")
         time.sleep(4)
         print("You and the marines setup with your weapons aimed at the door.")
@@ -150,7 +143,6 @@ def checkLocation(location):
         print("You are quickly overwhelmed by the number of aliens and are massacred in minutes.")
         time.sleep(3)
     elif location == 8:
-        print("Lose AAB")
         print("You convince the marines and yourself to go hide in the storage closet on the right.")
         time.sleep(3)
         print("You open the door and in horror see that their is a hole in the hull of the ship.")
@@ -160,7 +152,6 @@ def checkLocation(location):
         print("violently explodes as it decompresses into the vacuum of space.")
         time.sleep(2)
     elif location == 9:
-        print("Lose ABA")
         print("You dive for the pistol on the left and wrap your hand around the grip.")
         time.sleep(3)
         print("You turn and aim towards the alien and pull the trigger.")
@@ -172,7 +163,6 @@ def checkLocation(location):
         print("You scream in horror as the alien launches itself upon you and rips you to shreds.")
         time.sleep(3)
     elif location == 10:
-        print("Lose ABB")
         print("You run for the swords on the right and get your hands on one just in time to defend yourself.")
         time.sleep(4)
         print("You deflect the aliens first blow and grunt in pain as you realise how strong it is.")
@@ -190,7 +180,6 @@ def checkLocation(location):
         print("You fall to the floor and die quickly from your fatal wound.")
         time.sleep(2)
     elif location == 11:
-        print("Win BAA")
         print("You slowly walk towards the aleins talking to each other in grunts.")
         time.sleep(3)
         print("Behind them you see the opening to an alien boarding ship.")
@@ -204,7 +193,6 @@ def checkLocation(location):
         print("You have survived! :D")
         time.sleep(2)
     elif location == 12:
-        print("Lose BAB")
         print("You decide to make a run for the kitchen.")
         time.sleep(2)
         print("On the way there you trip over your own feet and hit your head on the floor.")
@@ -212,7 +200,6 @@ def checkLocation(location):
         print("Your bleed out from slipping on the floor and think how ironic it is that you died from your own stupidity.")
         time.sleep(4)
     elif location == 13:
-        print("Lose BBA")
         print("You head for the escape pod on the far left of the bay.")
         time.sleep(2)
         print("You enter the escape pod, strap in, and start the launch.")
@@ -222,7 +209,6 @@ def checkLocation(location):
         print("The escape pods explodes as it is fired upon by the aliens.")
         time.sleep(2)
     elif location == 14:
-        print("Lose BBB")
         print("You head for the escape pod on the far right of the bay.")
         time.sleep(2)
         print("As the hatch for the escape pod closes you notice the putrid smell of death.")
